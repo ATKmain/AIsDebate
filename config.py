@@ -1,8 +1,14 @@
+import os
+from dotenv import load_dotenv
+
+# Load the environment variables
+load_dotenv()
+
 config_list_gpt_3_5_turbo = [
     {
         'base_url': "https://api.openai.com/v1",
-        'api_key': "NULL",
-        'model': "gpt-3.5-turbo"
+        'api_key': os.getenv("OPENAI_API_KEY"),
+        'model': "gpt-3.5-turbo-1106"
     }
 ]
 llm_config_gpt_3_5_turbo = {
