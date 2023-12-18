@@ -12,8 +12,10 @@ Welcome to the AIsDebate Project! This Python-based project is designed to facil
 ## Getting Started
 
 ### Prerequisites
-- Python 3.8+
-- Virtual Environment (recommended)
+- Python 3.8.11
+- install Ollama
+- install Anaconda from https://www.anaconda.com/download
+- 
 
 ### Installation
 1. Clone the repository:
@@ -24,16 +26,22 @@ Welcome to the AIsDebate Project! This Python-based project is designed to facil
    ```
    cd AIsDebate
    ```
-3. Install dependencies:
-   ```
-   pip install -r requirements.txt
+3. Run 
+   ``` 
+   sh istall.sh 
    ```
 
 ### Usage
 To start a debate session between AI models:
 ```
-python AIsDebate.py --topics "science, politics, social science"
+sh run-llms.sh
 ```
+
+In another session :
+```
+sh run.sh
+```
+
 
 ## Configuration
 - Edit `config.json` to add or remove AI models.
@@ -47,3 +55,5 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 ## Acknowledgments
 Special thanks to the open-source community and AI research groups that have made their framework and LLMs accessible for such innovative uses.
+Matthew Berman Tutorial : https://www.youtube.com/watch?v=y7wMTwJN7rA&t=15s
+
