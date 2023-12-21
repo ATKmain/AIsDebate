@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 # Load the environment variables
 load_dotenv()
 
+output_path = os.getenv("OUTPUT_PATH")
+
 config_list_gpt_3_5_turbo = [
     {
         'base_url': "https://api.openai.com/v1",
@@ -14,6 +16,30 @@ config_list_gpt_3_5_turbo = [
 llm_config_gpt_3_5_turbo = {
     "config_list": config_list_gpt_3_5_turbo,
 }
+
+config_list_gpt_4_0613 = [
+    {
+        'base_url': "https://api.openai.com/v1",
+        'api_key': os.getenv("OPENAI_API_KEY"),
+        'model': "gpt-4-0613"
+    }
+]
+llm_config_gpt_gpt_4_0613 = {
+    "config_list": config_list_gpt_4_0613,
+}
+
+config_list_gpt_4_1106 = [
+    {
+        'base_url': "https://api.openai.com/v1",
+        'api_key': os.getenv("OPENAI_API_KEY"),
+        'model': "gpt-4-1106-preview"
+    }
+]
+llm_config_gpt_gpt_4_1106 = {
+    "config_list": config_list_gpt_4_1106,
+}
+
+
 
 config_list_mistral = [
     {
@@ -69,4 +95,15 @@ config_list_llama2u = [
 ]
 llm_config_llama2u = {
     "config_list": config_list_llama2u,
+}
+
+config_list_dolphin_mixtral = [
+    {
+        'base_url': "http://0.0.0.0:8015",
+        'api_key': "NULL",
+        'model': "dolphin-mixtral"
+    }
+]
+llm_config_dolphin_mixtral = {
+    "config_list": config_list_dolphin_mixtral,
 }
