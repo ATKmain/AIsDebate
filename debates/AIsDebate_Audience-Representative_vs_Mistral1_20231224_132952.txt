@@ -1,0 +1,6 @@
+# Debate Question: Explore the potential of generative AI in creating personalized learning experiences. How might it adapt educational content to suit individual learning styles and needs specially for schools?
+# Date and Time: 2023 12 24  13 29 52
+# Agents Specification:
+## Agent 1: Mistral1 - Model: {'model': 'gpt-4', 'config_list': [{'base_url': 'http://0.0.0.0:8010', 'api_key': 'NULL', 'model': 'mistral'}]}
+## Agent 2: Mistral2 - Model: {'model': 'gpt-4', 'config_list': [{'base_url': 'http://0.0.0.0:8010', 'api_key': 'NULL', 'model': 'mistral'}]}
+#######################################################
